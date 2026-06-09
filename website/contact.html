@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>DevOps Site - Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <h1>Contactez-nous</h1>
+        <p>On vous répond rapidement</p>
+    </div>
+
+    <div class="content">
+        <h2>Formulaire de contact</h2>
+        <br>
+        <label>Nom :</label><br>
+        <input type="text" id="nom" placeholder="Votre nom" style="width:100%;padding:10px;margin:10px 0;">
+        <br>
+        <label>Email :</label><br>
+        <input type="email" id="email" placeholder="Votre email" style="width:100%;padding:10px;margin:10px 0;">
+        <br>
+        <label>Message :</label><br>
+        <textarea id="message" placeholder="Votre message" style="width:100%;padding:10px;margin:10px 0;height:150px;"></textarea>
+        <br>
+        <button onclick="envoyerMessage()" style="background:#3498db;color:white;padding:12px 30px;border:none;border-radius:5px;cursor:pointer;font-size:16px;">
+            Envoyer
+        </button>
+    </div>
+
+    <footer>
+        <p>© 2026 Fatoumata-dev</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

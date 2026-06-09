@@ -1,0 +1,17 @@
+---
+- name: Déployer l'application avec Docker
+  hosts: webservers
+  become: true
+  tasks:
+    - name: Vérifier que Docker est installé
+      command: docker --version
+      register: docker_version
+
+    - name: Afficher la version de Docker
+      debug:
+        msg: "{{ docker_version.stdout }}"
+
+    - name: Lancer l'application avec Docker Compose
+      command: docker-compose up -d
+      args:
+        chdir: /home/etudiant/devops-tuto
